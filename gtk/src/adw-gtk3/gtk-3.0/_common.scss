@@ -1752,19 +1752,16 @@ headerbar {
   &.default-decoration {
     min-height: 36px;
     padding: 0 6px 0 6px;
-
+    
+    // Window close button for GTK3 applications with standard titlebars
     button.titlebutton {
-      border-radius: 100%;
-      background-color: $titlebutton_normal;
-      min-height: 24px;
-      min-width: 24px;
-      margin: 0 4px 0 4px;
-      padding: 0;
-      transition: $button_transition;
-      &:hover { background-color: $titlebutton_normal_hover; }
-      &:hover:active, &:active { background-color: $titlebutton_normal_active; }
-      &:backdrop { background: $titlebutton_backdrop; }
-      &:backdrop:hover { background: $titlebutton_backdrop_hover; }
+    	margin: 0 0 0 1px;
+      min-height: 22px;
+      min-width: 22px;
+      image {
+        min-height: 22px;
+        min-width: 22px;
+      }
     }
   }
 
@@ -4779,7 +4776,7 @@ decoration {
   }
 }
 
-// Window Close button
+// Window close button for GTK3 applications with csd headerbars
 button.titlebutton {
   padding: 2px;
   margin: 0;
@@ -4789,19 +4786,34 @@ button.titlebutton {
   text-shadow: none;
 
   &:not(.appmenu) {
-    border-radius: 9999px;
-    padding: 0px;
-    margin: 0 4px;
-    min-width: 24px;
-    min-height: 24px;
-    transition: $button_transition;
-    background-color: $titlebutton_normal;
-
-    &:hover { background-color: $titlebutton_normal_hover; }
-    &:hover:active { background-color: $titlebutton_normal_active; }
-
-    &:backdrop { background-color: $titlebutton_backdrop; }
-    &:backdrop:hover { background-color: $titlebutton_backdrop_hover; }
+      border-radius: 100%;
+      min-height: 24px;
+      min-width: 24px;
+      margin: 2px 2px 2px 1px;
+      transition: $button_transition;
+	&:hover {
+	  background-color: transparent;
+	  image { background-color: $titlebutton_normal_hover; }
+	}
+	&:hover:active, &:active {
+	  background-color: transparent;
+	  image { background-color: $titlebutton_normal_active; }
+	}
+	&:backdrop {
+	  background-color: transparent;
+	  image { background-color: $titlebutton_backdrop; }
+	}
+	&:backdrop:hover {
+	  background-color: transparent;
+	  image { background-color: $titlebutton_backdrop_hover; }
+	}
+      image {
+        border-radius: 100%;
+        background-color: $titlebutton_normal;
+        min-height: 24px;
+        min-width: 24px;
+	  transition: $button_transition;
+      }
   }
 
   .selection-mode & {
