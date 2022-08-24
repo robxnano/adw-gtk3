@@ -180,7 +180,7 @@ style "default" {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/checkbox-insensitive.png"
+      overlay_file    = "assets/checkbox-unchecked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -304,7 +304,7 @@ style "default" {
       function        = OPTION
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/radio-insensitive.png"
+      overlay_file    = "assets/radio-unchecked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -1605,7 +1605,7 @@ style "menu_item" {
       function        = CHECK
       state           = PRELIGHT
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox.png"
+      overlay_file    = "assets/menu-checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1613,7 +1613,7 @@ style "menu_item" {
       function        = CHECK
       state           = ACTIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox.png"
+      overlay_file    = "assets/menu-checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1621,7 +1621,7 @@ style "menu_item" {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-insensitive.png"
+      overlay_file    = "assets/menu-checkbox-unchecked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -1697,7 +1697,7 @@ style "menu_item" {
       function        = OPTION
       state           = NORMAL
       shadow          = OUT
-      overlay_file    = "assets/menu-radio.png"
+      overlay_file    = "assets/menu-radio-unchecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1705,7 +1705,7 @@ style "menu_item" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = OUT
-      overlay_file    = "assets/menu-radio.png"
+      overlay_file    = "assets/menu-radio-unchecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1713,7 +1713,7 @@ style "menu_item" {
       function        = OPTION
       state           = ACTIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-radio.png"
+      overlay_file    = "assets/menu-radio-unechecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1721,7 +1721,7 @@ style "menu_item" {
       function        = OPTION
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-radio-insensitive.png"
+      overlay_file    = "assets/menu-radio-unchecked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -1866,11 +1866,11 @@ style "button" {
   }
 }
 
-style "button_label" {
+style "bold_button_label" {
       font_name = "Bold"
 }
 
-style "check_button_label" {
+style "normal_button_label" {
       font_name = ""
 }
 
@@ -2477,17 +2477,6 @@ style "inline_toolbar" {
 
 }
 
-style "tooltip" {
-
-  xthickness = 13
-  ythickness = 13
-
-  bg[NORMAL]   = @tooltip_bg_color
-  fg[NORMAL]   = @tooltip_fg_color
-  bg[SELECTED] = @tooltip_bg_color
-
-}
-
 style "disable_separator" {
 
   xthickness = 0
@@ -2558,12 +2547,13 @@ widget_class "*<GtkCombo>.<GtkButton>"                             style "combo_
 widget_class "*<GtkToolbar>*<GtkButton>"                           style "toolbar_button"
 
 # Lets LibAdwaita buttons use bold font
-widget_class "*<GtkButton>*<GtkLabel>"                             style  "button_label"
-widget_class "*<GtkCheckButton>*<GtkLabel>"                        style  "check_button_label"
+widget_class "*<GtkButton>*<GtkLabel>"                             style "bold_button_label"
+widget_class "*<GtkLinkButton>*<GtkLabel>"                         style "normal_button_label"
+widget_class "*<GtkCheckButton>*<GtkLabel>"                        style "normal_button_label"
 
 # Notebooks are white, act accordingly
 widget_class "*<GtkNotebook>*<GtkProgressBar>"                     style "notebook_bg"
-widget_class "*<GtkNotebook>*<GtkButton>"                     style "fix_button"
+widget_class "*<GtkNotebook>*<GtkButton>"                          style "fix_button"
 widget_class "*<GtkNotebook>*<GtkSpinButton>"                      style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"    style "notebook_bg"
 widget_class "*<GtkNotebook>*<GimpRuler>"                          style "notebook_bg"
