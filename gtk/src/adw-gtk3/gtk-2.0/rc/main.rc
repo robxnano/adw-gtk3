@@ -993,7 +993,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider.png"
-      border      = {6, 6, 7, 6 }
+      border      = {6, 6, 7, 6}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1003,7 +1003,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-hover.png"
-      border      = {6, 6, 7, 6 }
+      border      = {6, 6, 7, 6}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1013,7 +1013,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-active.png"
-      border      = {6, 6, 7, 6 }
+      border      = {6, 6, 7, 6}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1597,7 +1597,7 @@ style "menu_item" {
       function        = CHECK
       state           = NORMAL
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox.png"
+      overlay_file    = "assets/menu-checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1713,7 +1713,7 @@ style "menu_item" {
       function        = OPTION
       state           = ACTIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-radio-unechecked.png"
+      overlay_file    = "assets/menu-radio-unchecked.png"
       overlay_stretch = FALSE
     }
 
@@ -1810,7 +1810,7 @@ style "separator_menu_item" {
 }
 
 style "button" {
-  
+
   xthickness = 2
   ythickness = 2
 
@@ -1866,17 +1866,8 @@ style "button" {
   }
 }
 
-style "bold_button_label" {
-      font_name = "Bold"
-}
-
-style "normal_button_label" {
-      font_name = ""
-}
-
 style "link_button" {
-  
-  font_name = ""
+
   # Disable the button effect, leave just the link
   engine "pixmap" {
     image {
@@ -1885,6 +1876,16 @@ style "link_button" {
   }
 
 }
+
+style "bold_button_label" {
+  
+  font_name = "Bold"
+}  
+
+style "normal_button_label" {
+  
+  font_name = ""
+}  
 
 style "entry" {
 
@@ -1906,8 +1907,7 @@ style "combobox" {
 }
 
 style "combobox_cellview" {
-
-  font_name = "Bold"
+  font_name      = "Bold"
   text[NORMAL]   = @fg_color
   text[PRELIGHT] = @fg_color
 }
@@ -2142,82 +2142,6 @@ style "normal_entry" {
       stretch  = TRUE
     }
   }
-}
-
-style "notebook_combo" {
-
-  engine "pixmap" {
-
-    #############
-    # LTR entry #
-    #############
-
-    image {
-      function  = SHADOW
-      state     = NORMAL
-      detail    = "entry"
-      file      = "assets/notebook-combo-entry-ltr-entry.png"
-      border    = {4, 4, 4, 4}
-      stretch   = TRUE
-      direction = LTR
-    }
-
-    image {
-      function  = SHADOW
-      state     = ACTIVE
-      detail    = "entry"
-      file      = "assets/notebook-combo-entry-ltr-entry-active.png"
-      border    = {4, 4, 4, 4}
-      stretch   = TRUE
-      direction = LTR
-    }
-
-    image {
-      function  = SHADOW
-      state     = INSENSITIVE
-      detail    = "entry"
-      file      = "assets/notebook-combo-entry-ltr-entry-insensitive.png"
-      border    = {4, 4, 4, 4}
-      stretch   = TRUE
-      direction = LTR
-    }
-
-    #############
-    # RTL entry #
-    #############
-
-    image {
-      function  = SHADOW
-      state     = NORMAL
-      detail    = "entry"
-      file      = "assets/notebook-combo-entry-rtl-entry.png"
-      border    = {4, 4, 4, 4}
-      stretch   = TRUE
-      direction = RTL
-    }
-
-    image {
-      function  = SHADOW
-      state     = ACTIVE
-      detail    = "entry"
-      file      = "assets/notebook-combo-entry-rtl-entry-active.png"
-      border    = {4, 4, 4, 4}
-      stretch   = TRUE
-      direction = RTL
-    }
-
-    image {
-      function  = SHADOW
-      state     = INSENSITIVE
-      detail    = "entry"
-      file      = "assets/notebook-combo-entry-rtl-entry-insensitive.png"
-      border    = {4, 4, 4, 4}
-      stretch   = TRUE
-      direction = RTL
-    }
-
-  }
-
 }
 
 style "textview" {
@@ -2477,6 +2401,17 @@ style "inline_toolbar" {
 
 }
 
+style "tooltip" {
+
+  xthickness = 10
+  ythickness = 6
+
+  bg[NORMAL]   = @tooltip_bg_color
+  fg[NORMAL]   = @tooltip_fg_color
+  bg[SELECTED] = @tooltip_bg_color
+
+}
+
 style "disable_separator" {
 
   xthickness = 0
@@ -2546,14 +2481,14 @@ widget_class "*<GtkCombo>.<GtkButton>"                             style "combo_
 # Toolbar buttons have different paddings
 widget_class "*<GtkToolbar>*<GtkButton>"                           style "toolbar_button"
 
-# Lets LibAdwaita buttons use bold font
+# Buttons use bold font
 widget_class "*<GtkButton>*<GtkLabel>"                             style "bold_button_label"
+# But not link buttons or check buttons
 widget_class "*<GtkLinkButton>*<GtkLabel>"                         style "normal_button_label"
 widget_class "*<GtkCheckButton>*<GtkLabel>"                        style "normal_button_label"
 
 # Notebooks are white, act accordingly
 widget_class "*<GtkNotebook>*<GtkProgressBar>"                     style "notebook_bg"
-widget_class "*<GtkNotebook>*<GtkButton>"                          style "fix_button"
 widget_class "*<GtkNotebook>*<GtkSpinButton>"                      style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"    style "notebook_bg"
 widget_class "*<GtkNotebook>*<GimpRuler>"                          style "notebook_bg"
