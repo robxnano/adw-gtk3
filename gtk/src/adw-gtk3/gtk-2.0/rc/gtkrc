@@ -1,8 +1,7 @@
-# Based on Bridge by ScionicSpectre
+# Based on GTK+ 2 Yaru from Ubuntu 22.04
+# Also based on Bridge by ScionicSpectre and GTK+ 2 Adwaita
+# Adw-X GTK+ 2 version, designed to look like the LibAdwaita theme for GTK4
 # vim:set ts=2 sw=2 sts=2 ai et:
-#
-# This is the GTK+ 2 version of Adwaita. It's whole purpose is to look as the
-# GTK+ 3 version as much as possible until GTK+ 2 dies completely.
 #
 # Note: comments for explaining styles are on the bottom of each file beside the
 # widget matches.
@@ -12,18 +11,18 @@
 # order to not mess up the dark theme.
 
 # Text/base
-gtk-color-scheme = "text_color:#5D5D5D\nbase_color:#FFFFFF"
+gtk-color-scheme = "text_color:#323232\nbase_color:#ffffff"
 # Foreground/background
-gtk-color-scheme = "fg_color:#3D3D3D\nbg_color:#F5F6F7"
+gtk-color-scheme = "fg_color:#323232\nbg_color:#fafafa"
 # Selected foreground/background
-gtk-color-scheme = "selected_fg_color:#ffffff\nselected_bg_color:#0073E5"
+gtk-color-scheme = "selected_fg_color:#ffffff\nselected_bg_color:#3584e4"
 # Insensitive foreground/background
 gtk-color-scheme = "insensitive_fg_color:#8b8e8f\ninsensitive_bg_color:#f1f1f1"
 # Menus
-gtk-color-scheme = "menu_color:#fafafa\nmenubar_bg:#f5f6f7"
-gtk-color-scheme = "menubar_fg:#3d3d3d\nmenubar_insensitive_fg:#3d3d3d"
+gtk-color-scheme = "menu_color:#ffffff\nmenubar_bg:#fafafa"
+gtk-color-scheme = "menubar_fg:#1c71d8\nmenubar_insensitive_fg:#3d3d3d"
 # Links
-gtk-color-scheme = "link_color:#0073E5\nvisited_link_color:#004CE5"
+gtk-color-scheme = "link_color:#3584e4\nvisited_link_color:#1c71d8"
 # Treeview headers
 gtk-color-scheme = "column_header_color:#979a9b\nhover_column_header_color:#636769"
 # Window decoration

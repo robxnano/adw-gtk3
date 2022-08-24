@@ -180,7 +180,7 @@ style "default" {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-insensitive.png"
+      overlay_file    = "assets/checkbox-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -220,7 +220,7 @@ style "default" {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = IN
-      overlay_file    = "assets/menu-checkbox-checked-insensitive.png"
+      overlay_file    = "assets/checkbox-checked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -304,7 +304,7 @@ style "default" {
       function        = OPTION
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-radio-insensitive.png"
+      overlay_file    = "assets/radio-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -312,7 +312,7 @@ style "default" {
       function        = OPTION
       state           = NORMAL
       shadow          = IN
-      overlay_file    = "assets/menu-radio-checked.png"
+      overlay_file    = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -320,7 +320,7 @@ style "default" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = IN
-      overlay_file    = "assets/menu-radio-checked.png"
+      overlay_file    = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -328,7 +328,7 @@ style "default" {
       function        = OPTION
       state           = ACTIVE
       shadow          = IN
-      overlay_file    = "assets/menu-radio-checked.png"
+      overlay_file    = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -336,7 +336,7 @@ style "default" {
       function        = OPTION
       state           = SELECTED
       shadow          = IN
-      overlay_file    = "assets/menu-radio-checked.png"
+      overlay_file    = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -344,7 +344,7 @@ style "default" {
       function        = OPTION
       state           = INSENSITIVE
       shadow          = IN
-      overlay_file    = "assets/menu-radio-checked-insensitive.png"
+      overlay_file    = "assets/radio-checked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -822,7 +822,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab-left-active.png"
-      border   = {3, 0, 3, 3}
+      border   = {5, 0, 5, 5}
       stretch  = TRUE
       gap_side = RIGHT
     }
@@ -830,7 +830,7 @@ style "default" {
     image {
       function = EXTENSION
       file     = "assets/tab-left.png"
-      border   = {3, 0, 3, 3}
+      border   = {5, 0, 5, 5}
       stretch  = TRUE
       gap_side = RIGHT
     }
@@ -841,7 +841,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab-right-active.png"
-      border   = {0, 3, 3, 3}
+      border   = {0, 5, 5, 5}
       stretch  = TRUE
       gap_side = LEFT
     }
@@ -849,7 +849,7 @@ style "default" {
     image {
       function = EXTENSION
       file     = "assets/tab-right.png"
-      border   = {0, 3, 3, 3}
+      border   = {0, 5, 5, 5}
       stretch  = TRUE
       gap_side = LEFT
     }
@@ -860,7 +860,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab-up-active.png"
-      border   = {3, 3, 3, 0}
+      border   = {5, 5, 5, 0}
       stretch  = TRUE
       gap_side = BOTTOM
     }
@@ -868,7 +868,7 @@ style "default" {
     image {
       function = EXTENSION
       file     = "assets/tab-up.png"
-      border   = {3, 3, 3, 0}
+      border   = {5, 5, 5, 0}
       stretch  = TRUE
       gap_side = BOTTOM
     }
@@ -879,7 +879,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab-down-active.png"
-      border   = {3, 3, 0, 3}
+      border   = {5, 5, 0, 5}
       stretch  = TRUE
       gap_side = TOP
     }
@@ -887,7 +887,7 @@ style "default" {
     image {
       function = EXTENSION
       file     = "assets/tab-down.png"
-      border   = {3, 3, 0, 3}
+      border   = {5, 5, 0, 5}
       stretch  = TRUE
       gap_side = TOP
     }
@@ -1241,7 +1241,7 @@ style "default" {
       state    = ACTIVE
       detail   = "entry"
       file     = "assets/entry-active.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1250,7 +1250,7 @@ style "default" {
       state    = INSENSITIVE
       detail   = "entry"
       file     = "assets/entry-insensitive.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1258,7 +1258,7 @@ style "default" {
       function = SHADOW
       detail   = "entry"
       file     = "assets/entry.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1292,7 +1292,7 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up.png"
-      border          = {1, 4, 4, 0}
+      border          = {1, 6, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up.png"
       overlay_stretch = FALSE
@@ -1304,7 +1304,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up-hover.png"
-      border          = {1, 4, 4, 0}
+      border          = {1, 6, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up.png"
       overlay_stretch = FALSE
@@ -1316,7 +1316,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up-active.png"
-      border          = {1, 4, 4, 0}
+      border          = {1, 6, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up.png"
       overlay_stretch = FALSE
@@ -1328,7 +1328,7 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up-insensitive.png"
-      border          = {1, 4, 4, 0}
+      border          = {1, 6, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up-insensitive.png"
       overlay_stretch = FALSE
@@ -1342,7 +1342,7 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up.png"
-      border          = {4, 1, 4, 0}
+      border          = {6, 1, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up.png"
       overlay_stretch = FALSE
@@ -1354,7 +1354,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up-hover.png"
-      border          = {4, 1, 4, 0}
+      border          = {6, 1, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up.png"
       overlay_stretch = FALSE
@@ -1366,7 +1366,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up-hover.png"
-      border          = {4, 1, 4, 0}
+      border          = {6, 1, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up.png"
       overlay_stretch = FALSE
@@ -1378,7 +1378,7 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up-insensitive.png"
-      border          = {4, 1, 4, 0}
+      border          = {6, 1, 6, 0}
       stretch         = TRUE
       overlay_file    = "assets/spin-up-insensitive.png"
       overlay_stretch = FALSE
@@ -1392,7 +1392,7 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down.png"
-      border          = {1, 4, 1, 4}
+      border          = {1, 6, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down.png"
       overlay_stretch = FALSE
@@ -1404,7 +1404,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down-hover.png"
-      border          = {1, 4, 1, 4}
+      border          = {1, 6, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down.png"
       overlay_stretch = FALSE
@@ -1416,7 +1416,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down-active.png"
-      border          = {1, 4, 1, 4}
+      border          = {1, 6, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down.png"
       overlay_stretch = FALSE
@@ -1428,7 +1428,7 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down-insensitive.png"
-      border          = {1, 4, 1, 4}
+      border          = {1, 6, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down-insensitive.png"
       overlay_stretch = FALSE
@@ -1442,7 +1442,7 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down.png"
-      border          = {4, 1, 1, 4}
+      border          = {6, 1, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down.png"
       overlay_stretch = FALSE
@@ -1454,7 +1454,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down-hover.png"
-      border          = {4, 1, 1, 4}
+      border          = {6, 1, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down.png"
       overlay_stretch = FALSE
@@ -1466,7 +1466,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down-active.png"
-      border          = {4, 1, 1, 4}
+      border          = {6, 1, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down.png"
       overlay_stretch = FALSE
@@ -1478,7 +1478,7 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down-insensitive.png"
-      border          = {4, 1, 1, 4}
+      border          = {6, 1, 1, 6}
       stretch         = TRUE
       overlay_file    = "assets/spin-down-insensitive.png"
       overlay_stretch = FALSE
@@ -1820,7 +1820,8 @@ style "separator_menu_item" {
 }
 
 style "button" {
-
+  
+  bg[NORMAL] = @fg_color
   xthickness = 2
   ythickness = 2
 
@@ -1835,7 +1836,7 @@ style "button" {
       function = BOX
       state    = NORMAL
       file     = "assets/button.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1844,7 +1845,7 @@ style "button" {
       state    = PRELIGHT
       shadow   = OUT
       file     = "assets/button-hover.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1854,7 +1855,7 @@ style "button" {
       state    = PRELIGHT
       shadow   = IN
       file     = "assets/button-active.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1862,7 +1863,7 @@ style "button" {
       function = BOX
       state    = ACTIVE
       file     = "assets/button-active.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
 
@@ -1870,14 +1871,23 @@ style "button" {
       function = BOX
       state    = INSENSITIVE
       file     = "assets/button-insensitive.png"
-      border   = {4, 4, 4, 4}
+      border   = {6, 6, 6, 6}
       stretch  = TRUE
     }
   }
 }
 
-style "link_button" {
+style "button_label" {
+      font_name = "Bold"
+}
 
+style "check_button_label" {
+      font_name = ""
+}
+
+style "link_button" {
+  
+  font_name = ""
   # Disable the button effect, leave just the link
   engine "pixmap" {
     image {
@@ -1907,6 +1917,8 @@ style "combobox" {
 }
 
 style "combobox_cellview" {
+
+  font_name = "Bold"
   text[NORMAL]   = @fg_color
   text[PRELIGHT] = @fg_color
 }
@@ -2103,38 +2115,6 @@ style "notebook_bg" {
   bg[NORMAL]      = @base_color
   bg[PRELIGHT]    = @base_color
   bg[INSENSITIVE] = @base_color
-}
-
-style "notebook_entry" {
-
-  engine "pixmap" {
-
-    image {
-      function = SHADOW
-      state    = ACTIVE
-      detail   = "entry"
-      file     = "assets/notebook-entry-active.png"
-      border   = {4, 4, 4, 4}
-      stretch  = TRUE
-    }
-
-    image {
-      function = SHADOW
-      state    = INSENSITIVE
-      detail   = "entry"
-      file     = "assets/notebook-entry-insensitive.png"
-      border   = {4, 4, 4, 4}
-      stretch  = TRUE
-    }
-
-    image {
-      function = SHADOW
-      detail   = "entry"
-      file     = "assets/notebook-entry.png"
-      border   = {4, 4, 4, 4}
-      stretch  = TRUE
-    }
-  }
 }
 
 style "normal_bg" {
@@ -2588,15 +2568,17 @@ widget_class "*<GtkCombo>.<GtkButton>"                             style "combo_
 # Toolbar buttons have different paddings
 widget_class "*<GtkToolbar>*<GtkButton>"                           style "toolbar_button"
 
+# Lets LibAdwaita buttons use bold font
+widget_class "*<GtkButton>*<GtkLabel>"                             style  "button_label"
+widget_class "*<GtkCheckButton>*<GtkLabel>"                        style  "check_button_label"
+
 # Notebooks are white, act accordingly
-widget_class "*<GtkNotebook>*<GtkEntry>"                           style "notebook_entry"
 widget_class "*<GtkNotebook>*<GtkProgressBar>"                     style "notebook_bg"
+widget_class "*<GtkNotebook>*<GtkButton>"                     style "fix_button"
 widget_class "*<GtkNotebook>*<GtkSpinButton>"                      style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"    style "notebook_bg"
 widget_class "*<GtkNotebook>*<GimpRuler>"                          style "notebook_bg"
 widget_class "*<GtkNotebook>.<GimpDisplayShell>*<GtkEventBox>"     style "notebook_bg"
-widget_class "*<GtkNotebook>*<GtkComboBoxEntry>*"                  style "notebook_combo"
-widget_class "*<GtkNotebook>*<GtkCombo>*"                          style "notebook_combo"
 
 # However, stuff inside eventboxes inside notebooks is grey
 # again, react

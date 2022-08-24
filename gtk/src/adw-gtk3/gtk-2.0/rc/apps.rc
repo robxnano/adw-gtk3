@@ -8,7 +8,7 @@
 style "gimp_spin_scale" {
 
   # Spin background
-  bg[NORMAL] = @base_color
+  bg[NORMAL] = @window_color
 
   engine "pixmap" {
 
