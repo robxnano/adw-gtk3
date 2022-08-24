@@ -1551,17 +1551,7 @@ style "menubar_item" {
   ythickness = 4
 
   fg[NORMAL]   = @menubar_insensitive_fg
-  fg[PRELIGHT] = @menubar_fg
-
-  engine "pixmap" {
-    image {
-      function    = BOX
-      state       = PRELIGHT
-      file        = "assets/menubar-item-active.png"
-      border      = {0, 0, 0, 3}
-    }
-  }
-
+  bg[PRELIGHT] = @menu_hover_color
 }
 
 style "menu" {
@@ -1821,7 +1811,6 @@ style "separator_menu_item" {
 
 style "button" {
   
-  bg[NORMAL] = @fg_color
   xthickness = 2
   ythickness = 2
 
