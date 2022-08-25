@@ -137,9 +137,9 @@
   .nautilus-list-view {
     .view {
       &:selected {
-        background-color: $view_selected_color;
+        background-color: if($variant=='light', gtkalpha($accent_bg_color, 0.2), gtkalpha($accent_bg_color, 0.3));
         color: $text_color;
-        &:hover { background-color: $view_selected_hover_color; }
+        &:hover { background-color: if($variant=='light', gtkalpha($accent_bg_color, 0.25), gtkalpha($accent_bg_color, 0.35)); }
       }
       &:hover {
         background-color: $view_hover_color;
