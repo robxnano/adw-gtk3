@@ -4123,17 +4123,13 @@ messagedialog { // Message Dialog styling
       &:active { @include button(active, $dialog_bg_color, $dialog_fg_color); }
 
       &.suggested-action {
-        background-color: $suggested_bg_color;
-        color: $selected_fg_color;
-        &:hover { @include button(hover, $suggested_bg_color, $selected_fg_color); }
-        &:active, &:checked { @include button(active, $suggested_bg_color, $selected_fg_color); }
-      }
+        color: $accent_color;
+        outline-color: gtkalpha(currentColor, 0.3);
+	}
 
       &.destructive-action {
-        background-color: $destructive_bg_color;
-        color: $destructive_fg_color;
-        &:hover { @include button(hover, $destructive_bg_color, $destructive_fg_color); }
-        &:active, &:checked { @include button(active, $destructive_bg_color, $destructive_fg_color); }
+        color: $destructive_color;
+        outline-color: gtkalpha(currentColor, 0.3);
       }
 
       &:first-child {
