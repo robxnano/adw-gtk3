@@ -4750,10 +4750,10 @@ decoration {
 
   .csd.popup & {
     border-radius: $menu_radius;
-    box-shadow: 0 1px 2px transparentize(black, 0.8),
+    box-shadow: 0 1px 5px 1px transparentize(black, 0.91),
+    		    0 2px 14px 3px transparentize(black, 0.95),
                 0 0 0 1px gtkalpha($_wm_border, 0.9);
   }
-
   tooltip.csd & {
     border-radius: 5px;
     box-shadow: none;
@@ -4761,8 +4761,10 @@ decoration {
 
   messagedialog.csd & {
     border-radius: $window_radius;
-    box-shadow: 0 1px 2px transparentize(black, 0.8),
-                0 0 0 1px gtkalpha($_wm_border, 0.9);
+    box-shadow:  0 2px 8px 2px transparentize(black, 0.93),
+    		     0 3px 20px 10px transparentize(black, 0.95),
+    		     0 6px 32px 16px transparentize(black, 0.98),
+    		     0 0 0 1px gtkalpha($_wm_border, 0.95);
   }
 
   .solid-csd & {
