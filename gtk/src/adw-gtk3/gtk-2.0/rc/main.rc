@@ -1597,32 +1597,24 @@ style "menu_item" {
       function        = CHECK
       state           = NORMAL
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-unchecked.png"
-      overlay_stretch = FALSE
     }
 
     image {
       function        = CHECK
       state           = PRELIGHT
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-unchecked.png"
-      overlay_stretch = FALSE
     }
 
     image {
       function        = CHECK
       state           = ACTIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-unchecked.png"
-      overlay_stretch = FALSE
     }
 
     image {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-unchecked-insensitive.png"
-      overlay_stretch = FALSE
     }
 
     image {

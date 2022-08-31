@@ -1165,9 +1165,9 @@
      borderopacity="1"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.1380997"
-     inkscape:cx="588.78158"
-     inkscape:cy="107.11784"
+     inkscape:zoom="12.556397"
+     inkscape:cx="569.39105"
+     inkscape:cy="25.524838"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="true"
@@ -1770,7 +1770,7 @@
     </g>
     <g
        transform="matrix(1.125,0,0,1.125,399,-520.875)"
-       inkscape:label="checkbox-checked"
+       inkscape:label="menu-checkbox-checked"
        id="menu-checkbox-checked"
        style="display:inline;stroke-width:0.888889"
        inkscape:export-filename="/home/jupiter007/yaru/gtk/src/default/gtk-2.0/assets/checkbox-checked.png"
@@ -4066,7 +4066,7 @@
        id="tab-up-active"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssc"
-       inkscape:label="#rect4838" />
+       inkscape:label="tab-up-active" />
     <g
        id="tab-horz-gap"
        inkscape:label="#g5413"
@@ -4132,12 +4132,12 @@
        sodipodi:nodetypes="cssssc"
        inkscape:connector-curvature="0"
        id="tab-up"
-       d="m 160.5,9 v -0.5 c 0,-1.662 1.338,-3 3,-3 h 1 c 1.662,0 3,1.338 3,3 v 0.5"
+       d="m 158.5,11 v -0.785714 c 0,-2.6117143 2.10258,-4.7142858 4.71429,-4.7142858 h 1.57143 c 2.61171,0 4.71428,2.1025715 4.71428,4.7142858 V 11"
        style="opacity:0;fill:#f1f1f1;fill-opacity:1;stroke:#b6b6b3;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:label="#path4855" />
+       inkscape:label="tab-up" />
     <path
        style="opacity:0;fill:#f1f1f1;fill-opacity:1;stroke:#b6b6b3;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 164,27.5 h -0.5 c -1.662,0 -3,-1.338 -3,-3 v -1 c 0,-1.662 1.338,-3 3,-3 h 0.5"
+       d="m 164,33.5 h -0.78571 C 160.60258,33.5 158.5,31.397429 158.5,28.785715 V 27.214286 C 158.5,24.602572 160.60258,22.5 163.21429,22.5 H 164"
        id="tab-left"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssc"
@@ -4147,12 +4147,12 @@
        sodipodi:nodetypes="cssssc"
        inkscape:connector-curvature="0"
        id="tab-right"
-       d="m 166,27.5 h 0.5 c 1.662,0 3,-1.338 3,-3 v -1 c 0,-1.662 -1.338,-3 -3,-3 h -0.5"
+       d="m 166,33.5 h 0.78572 c 2.61171,0 4.71428,-2.102571 4.71428,-4.714285 V 27.214286 C 171.5,24.602572 169.39743,22.5 166.78572,22.5 H 166"
        style="opacity:0;fill:#f1f1f1;fill-opacity:1;stroke:#b6b6b3;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        inkscape:label="#path4855"
        style="opacity:0;fill:#f1f1f1;fill-opacity:1;stroke:#b6b6b3;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 160.5,11 v 0.5 c 0,1.662 1.338,3 3,3 h 1 c 1.662,0 3,-1.338 3,-3 v -0.5"
+       d="m 158.5,13 v 0.785715 c 0,2.611714 2.10258,4.714285 4.71429,4.714285 h 1.57143 c 2.61171,0 4.71428,-2.102571 4.71428,-4.714285 V 13"
        id="tab-down"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssc" />
